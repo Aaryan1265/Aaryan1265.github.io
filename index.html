@@ -3,74 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aaryan Shukla — Computer Programming & Analysis student and software developer.">
+  <meta name="description" content="Aaryan Shukla — Computer Programming & Analysis student, software developer, and Winter 2027 co-op candidate.">
+  <meta name="theme-color" content="#071018">
   <title>Aaryan Shukla | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#home">AS</a>
-    <button class="menu" aria-label="Toggle navigation">☰</button>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-resume" href="assets/Aaryan_Shukla_Resume.pdf" target="_blank">Resume</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav" id="top">
+    <a class="logo magnetic" href="#home" aria-label="Aaryan Shukla home">AS</a>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Primary navigation">
+      <a href="#about" data-section="about">About</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#contact" data-section="contact">Contact</a>
+      <a class="nav-resume magnetic" href="assets/Aaryan_Shukla_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <p class="eyebrow">Computer Programming &amp; Analysis · Seneca Polytechnic</p>
-      <h1>Hi, I'm <span>Aaryan Shukla.</span></h1>
-      <h2>I build software that solves real problems.</h2>
-      <p class="hero-copy">
-        Software developer focused on full-stack, backend, AI, security, and data engineering.
-        I enjoy turning complex requirements into practical, reliable applications.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">View My Work</a>
-        <a class="btn" href="assets/Aaryan_Shukla_Resume.pdf" target="_blank">View Resume</a>
+      <div class="hero-grid">
+        <div class="hero-copy-wrap reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Open to Winter 2027 Co-op</p>
+          <h1>Hi, I'm <span>Aaryan Shukla.</span></h1>
+          <h2><span id="roleText">Software Developer</span><span class="caret">|</span></h2>
+          <p class="hero-copy">
+            Computer Programming &amp; Analysis student at Seneca Polytechnic building practical
+            software across full-stack development, backend systems, AI, security, data engineering, and ETL.
+          </p>
+          <div class="actions">
+            <a class="btn primary magnetic" href="#projects">Explore my work <span>↓</span></a>
+            <a class="btn magnetic" href="assets/Aaryan_Shukla_Resume.pdf" target="_blank" rel="noopener">View resume ↗</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Aaryan1265" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/aaryan-shukla-440942300/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <button type="button" class="copy-email" data-email="YOUR_EMAIL@example.com">Copy email</button>
+          </div>
+        </div>
+
+        <div class="terminal-card tilt reveal" data-tilt>
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <small>~/aaryan/portfolio</small>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">aaryan@dev</span>:<span class="path">~</span>$ whoami</p>
+            <p class="terminal-output">computer-programming &amp; analysis student</p>
+            <p><span class="prompt">aaryan@dev</span>:<span class="path">~</span>$ focus --current</p>
+            <div class="terminal-list">
+              <button type="button" data-jump="#projects">01 <b>build</b> production-minded projects</button>
+              <button type="button" data-jump="#experience">02 <b>learn</b> through real work</button>
+              <button type="button" data-jump="#contact">03 <b>connect</b> with technical teams</button>
+            </div>
+            <p><span class="prompt">aaryan@dev</span>:<span class="path">~</span>$ <span class="blink">_</span></p>
+          </div>
+        </div>
       </div>
-      <div class="socials">
-        <a href="https://github.com/Aaryan1265" target="_blank">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/aaryan-shukla-440942300/" target="_blank">LinkedIn ↗</a>
-      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span> Scroll to explore</div>
     </section>
 
     <section id="about" class="section">
       <div class="section-label">01 / About</div>
-      <div class="section-content two-col">
-        <div>
-          <h2>Building with purpose.</h2>
-          <p>
-            I'm a Computer Programming &amp; Analysis student at Seneca Polytechnic with a strong
-            interest in software development and building practical applications.
-          </p>
-          <p>
-            My projects span full-stack development, backend systems, security, artificial
-            intelligence, data engineering, ETL, testing, and data quality. I like understanding
-            how systems work end-to-end and building solutions that are maintainable and useful.
-          </p>
-          <p>
-            Outside development, I've built leadership and communication experience through
-            campus involvement, including serving as Treasurer of the Disruptive Technologies
-            Club and as a Peer Mentor.
-          </p>
-        </div>
-        <div class="panel">
-          <h3>Core Stack</h3>
-          <div class="tags">
-            <span>Python</span><span>C++</span><span>JavaScript</span><span>TypeScript</span>
-            <span>SQL</span><span>React</span><span>Next.js</span><span>FastAPI</span>
-            <span>PostgreSQL</span><span>Docker</span><span>Git</span><span>GitHub</span>
-            <span>Pandas</span><span>Pytest</span><span>LLMs</span><span>ETL</span>
+      <div class="section-content">
+        <div class="about-grid">
+          <div class="about-main reveal">
+            <p class="kicker">How I work</p>
+            <h2>Curious about the whole system, not just the screen.</h2>
+            <p>
+              I'm a Computer Programming &amp; Analysis student at Seneca Polytechnic with a strong
+              interest in software development and building practical applications.
+            </p>
+            <p>
+              My projects span full-stack development, backend systems, security, artificial
+              intelligence, data engineering, ETL, testing, and data quality. I enjoy understanding
+              how systems work end-to-end and turning complex requirements into maintainable solutions.
+            </p>
+            <p>
+              Outside development, I've built leadership and communication experience through campus
+              involvement, including serving as Treasurer of the Disruptive Technologies Club and as a Peer Mentor.
+            </p>
           </div>
-          <h3>Education</h3>
-          <p><strong>Seneca Polytechnic</strong><br>
-          Ontario College Advanced Diploma<br>
-          Computer Programming &amp; Analysis · 2024–2027</p>
+
+          <aside class="about-panel reveal">
+            <div class="panel-heading"><span>01</span><b>Technical focus</b></div>
+            <div class="skill-cloud" id="skillCloud">
+              <button type="button" data-skill="python">Python</button>
+              <button type="button" data-skill="cpp">C++</button>
+              <button type="button" data-skill="javascript">JavaScript</button>
+              <button type="button" data-skill="typescript">TypeScript</button>
+              <button type="button" data-skill="sql">SQL</button>
+              <button type="button" data-skill="react">React</button>
+              <button type="button" data-skill="nextjs">Next.js</button>
+              <button type="button" data-skill="fastapi">FastAPI</button>
+              <button type="button" data-skill="postgresql">PostgreSQL</button>
+              <button type="button" data-skill="docker">Docker</button>
+              <button type="button" data-skill="git">Git / GitHub</button>
+              <button type="button" data-skill="pandas">Pandas</button>
+              <button type="button" data-skill="pytest">Pytest</button>
+              <button type="button" data-skill="llm">LLMs</button>
+              <button type="button" data-skill="etl">ETL</button>
+            </div>
+            <p class="skill-hint" id="skillHint">Click a skill to highlight related project work.</p>
+          </aside>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card reveal"><strong data-count="4">0</strong><span>featured technical projects</span></div>
+          <div class="stat-card reveal"><strong>2027</strong><span>target co-op graduation path</span></div>
+          <div class="stat-card reveal"><strong>ETL</strong><span>data pipelines &amp; quality mindset</span></div>
+          <div class="stat-card reveal"><strong>QA</strong><span>testing, debugging &amp; reliability</span></div>
         </div>
       </div>
     </section>
@@ -78,46 +130,67 @@
     <section id="experience" class="section">
       <div class="section-label">02 / Experience</div>
       <div class="section-content">
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2026 — Present</div>
-            <div>
-              <h3>Customer Service Representative</h3>
-              <p class="company">Farm Boy Inc. · Toronto, ON</p>
-              <p>Provide professional customer service in a fast-paced environment while maintaining accuracy, professionalism, and attention to detail.</p>
+        <div class="experience-intro reveal">
+          <p class="kicker">Experience &amp; leadership</p>
+          <h2>Technical growth backed by real-world work.</h2>
+          <p>Click an experience to expand the details.</p>
+        </div>
+
+        <div class="experience-list" id="experienceList">
+          <article class="experience-item reveal">
+            <button class="experience-trigger" type="button" aria-expanded="false">
+              <span class="experience-year">2026 — Present</span>
+              <span class="experience-title"><b>Customer Service Representative</b><small>Farm Boy Inc. · Toronto, ON</small></span>
+              <span class="experience-plus">+</span>
+            </button>
+            <div class="experience-details">
+              <p>Provide professional customer service in a fast-paced environment while maintaining accuracy, professionalism, attention to detail, and efficient day-to-day operations.</p>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Freelance</div>
-            <div>
-              <h3>Freelance Software Developer</h3>
-              <p class="company">Upwork · Remote</p>
-              <p>Develop software solutions from client requirements, managing implementation, testing, debugging, deliverables, and iterative feedback.</p>
+
+          <article class="experience-item reveal">
+            <button class="experience-trigger" type="button" aria-expanded="false">
+              <span class="experience-year">Freelance</span>
+              <span class="experience-title"><b>Freelance Software Developer</b><small>Upwork · Remote</small></span>
+              <span class="experience-plus">+</span>
+            </button>
+            <div class="experience-details">
+              <p>Develop software solutions from client requirements, managing implementation, testing, debugging, deliverables, and iterative feedback across project work.</p>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2025 — Present</div>
-            <div>
-              <h3>Open House Ambassador</h3>
-              <p class="company">Seneca Polytechnic · Toronto, ON</p>
+
+          <article class="experience-item reveal">
+            <button class="experience-trigger" type="button" aria-expanded="false">
+              <span class="experience-year">2025 — Present</span>
+              <span class="experience-title"><b>Open House Ambassador</b><small>Seneca Polytechnic · Toronto, ON</small></span>
+              <span class="experience-plus">+</span>
+            </button>
+            <div class="experience-details">
               <p>Represent Seneca at open house activities, welcome prospective students and guests, communicate program information, and support event operations.</p>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2024 — 2026</div>
-            <div>
-              <h3>Overnight Associate</h3>
-              <p class="company">Walmart Canada · Keswick, ON</p>
+
+          <article class="experience-item reveal">
+            <button class="experience-trigger" type="button" aria-expanded="false">
+              <span class="experience-year">2024 — 2026</span>
+              <span class="experience-title"><b>Overnight Associate</b><small>Walmart Canada · Keswick, ON</small></span>
+              <span class="experience-plus">+</span>
+            </button>
+            <div class="experience-details">
               <p>Completed overnight retail and inventory responsibilities with accuracy and organization while collaborating with team members to meet operational priorities.</p>
             </div>
           </article>
         </div>
 
-        <div class="leadership">
-          <h3>Leadership</h3>
-          <div class="lead-grid">
-            <div><strong>Treasurer</strong><span>Disruptive Technologies Club · Seneca Polytechnic</span></div>
-            <div><strong>Peer Mentor</strong><span>Seneca Polytechnic</span></div>
+        <div class="leadership-block reveal">
+          <div class="panel-heading"><span>Leadership</span><b>Campus involvement</b></div>
+          <div class="leadership-grid">
+            <button type="button" class="lead-card" data-lead="Treasurer — Disruptive Technologies Club, Seneca Polytechnic">
+              <span>01</span><b>Treasurer</b><small>Disruptive Technologies Club · Seneca Polytechnic</small>
+            </button>
+            <button type="button" class="lead-card" data-lead="Peer Mentor — Seneca Polytechnic">
+              <span>02</span><b>Peer Mentor</b><small>Seneca Polytechnic</small>
+            </button>
           </div>
         </div>
       </div>
@@ -126,46 +199,64 @@
     <section id="projects" class="section">
       <div class="section-label">03 / Selected Projects</div>
       <div class="section-content">
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-top"><span>01</span><span>Full-Stack</span></div>
+        <div class="projects-header reveal">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2>Projects you can actually click into.</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Project filters">
+            <button type="button" class="filter active" data-filter="all">All</button>
+            <button type="button" class="filter" data-filter="fullstack">Full-stack</button>
+            <button type="button" class="filter" data-filter="data">Data / ETL</button>
+            <button type="button" class="filter" data-filter="ai">AI / Security</button>
+          </div>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card featured tilt reveal" data-category="fullstack" data-project="finguard">
+            <div class="project-top"><span>01 / Featured</span><span>Full-stack</span></div>
+            <div class="project-icon">FG</div>
             <h3>FinGuard</h3>
             <p class="project-subtitle">Transaction Risk Monitoring Platform</p>
             <p>Full-stack platform for transaction risk monitoring with REST APIs, risk workflows, database persistence, and containerized development.</p>
             <div class="tags"><span>Next.js</span><span>TypeScript</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
-            <a href="https://github.com/Aaryan1265" target="_blank">View on GitHub ↗</a>
+            <button type="button" class="project-open">View case study <span>→</span></button>
           </article>
 
-          <article class="project-card">
-            <div class="project-top"><span>02</span><span>Data Engineering</span></div>
+          <article class="project-card featured-control tilt reveal" data-category="data" data-project="controlbridge">
+            <div class="project-top"><span>02 / Featured</span><span>Data / ETL</span></div>
+            <div class="project-icon">CB</div>
             <h3>ControlBridge</h3>
             <p class="project-subtitle">Enterprise Data Reconciliation &amp; Risk Reporting</p>
             <p>Data-controls platform for validation, cross-system reconciliation, ETL into a relational warehouse, exception detection, and automated reporting.</p>
             <div class="tags"><span>Python</span><span>Pandas</span><span>SQLAlchemy</span><span>ETL</span><span>Pytest</span><span>Docker</span></div>
-            <a href="https://github.com/Aaryan1265/ControlBridge-Enterprise-Data-Reconciliation-Platform" target="_blank">View on GitHub ↗</a>
+            <button type="button" class="project-open">View case study <span>→</span></button>
           </article>
 
-          <article class="project-card">
+          <article class="project-card tilt reveal" data-category="ai" data-project="shadowtrace">
             <div class="project-top"><span>03</span><span>Security</span></div>
+            <div class="project-icon">ST</div>
             <h3>ShadowTrace</h3>
             <p class="project-subtitle">Identity &amp; Security Platform</p>
             <p>Authentication-risk platform with explainable risk scoring for suspicious login behavior, REST APIs, security alerts, and database-backed workflows.</p>
             <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Docker</span></div>
-            <a href="https://github.com/Aaryan1265" target="_blank">View on GitHub ↗</a>
+            <button type="button" class="project-open">View case study <span>→</span></button>
           </article>
 
-          <article class="project-card">
+          <article class="project-card tilt reveal" data-category="ai" data-project="repodoctor">
             <div class="project-top"><span>04</span><span>AI</span></div>
+            <div class="project-icon">RD</div>
             <h3>RepoDoctor</h3>
             <p class="project-subtitle">AI-Powered Repository Health Analyzer</p>
             <p>Repository analysis tool combining deterministic health scoring, security and code-quality checks, optional AI summaries, testing, and CI.</p>
             <div class="tags"><span>Python</span><span>FastAPI</span><span>LLMs</span><span>GitHub</span><span>Docker</span></div>
-            <a href="https://github.com/Aaryan1265" target="_blank">View on GitHub ↗</a>
+            <button type="button" class="project-open">View case study <span>→</span></button>
           </article>
         </div>
 
-        <div class="more-projects">
+        <div class="project-footer reveal">
           <span>Also built:</span> DataQuality — Enterprise Data Quality &amp; Drift Analysis Toolkit
+          <a href="https://github.com/Aaryan1265" target="_blank" rel="noopener">View GitHub ↗</a>
         </div>
       </div>
     </section>
@@ -173,24 +264,50 @@
     <section id="contact" class="section contact-section">
       <div class="section-label">04 / Contact</div>
       <div class="section-content contact">
-        <p class="eyebrow">What's next?</p>
-        <h2>Let's build something.</h2>
+        <p class="kicker">What's next?</p>
+        <h2>Let's build something useful.</h2>
         <p>
           I'm currently seeking a <strong>Winter 2027 Software Development Co-op</strong>.
-          If you'd like to discuss an opportunity, collaborate, or connect, I'd love to hear from you.
+          If you're hiring, collaborating, or simply want to connect, I'd love to hear from you.
         </p>
         <div class="actions">
-          <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
-          <a class="btn" href="https://www.linkedin.com/in/aaryan-shukla-440942300/" target="_blank">LinkedIn</a>
-          <a class="btn" href="https://github.com/Aaryan1265" target="_blank">GitHub</a>
+          <a class="btn primary magnetic" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a>
+          <a class="btn magnetic" href="https://www.linkedin.com/in/aaryan-shukla-440942300/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn magnetic" href="https://github.com/Aaryan1265" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
+        <p class="contact-note">Replace <code>YOUR_EMAIL@example.com</code> with your real email before publishing.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Designed &amp; built by Aaryan Shukla · <a href="https://github.com/Aaryan1265" target="_blank">GitHub</a></p>
+    <p>Designed &amp; built by Aaryan Shukla · <a href="https://github.com/Aaryan1265" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
+
+  <dialog class="project-modal" id="projectModal">
+    <div class="modal-card">
+      <button type="button" class="modal-close" aria-label="Close project details">×</button>
+      <p class="kicker" id="modalType">Project</p>
+      <h2 id="modalTitle">Project title</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-grid">
+        <div>
+          <h4>Highlights</h4>
+          <ul id="modalHighlights"></ul>
+        </div>
+        <div>
+          <h4>Technology</h4>
+          <div class="tags" id="modalTags"></div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a class="btn primary" id="modalGithub" href="#" target="_blank" rel="noopener">Open GitHub ↗</a>
+        <button type="button" class="btn modal-dismiss">Keep exploring</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>

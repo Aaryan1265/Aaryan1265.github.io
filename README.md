@@ -1,16 +1,32 @@
-# Aaryan Shukla — Portfolio
+# Aaryan Shukla — Interactive Portfolio
 
-Personal software developer portfolio built with HTML, CSS, and JavaScript and designed for GitHub Pages.
+Static GitHub Pages portfolio built with HTML, CSS and vanilla JavaScript.
+
+## Files
+
+- `index.html` — portfolio page and project modal content
+- `style.css` — responsive design system and animations
+- `script.js` — navigation, reveal animations, project filters, modal case studies, accordion experience, skill interactions, scroll progress, typewriter, tilt and magnetic interactions
+- `assets/Aaryan_Shukla_Resume.pdf` — resume used by the Resume buttons
 
 ## Before publishing
-1. Replace `YOUR_EMAIL@example.com` in `index.html` with your real email.
-2. Add your final resume as `assets/Aaryan_Shukla_Resume.pdf`.
-3. Replace placeholder GitHub links for ShadowTrace, RepoDoctor, FinGuard, and DataQuality with the exact repository URLs if they are public.
-4. Review dates and wording against your final resume.
 
-## Publish with GitHub Pages
-This repository should be named `Aaryan1265.github.io`. In GitHub:
-**Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save**.
+Replace `YOUR_EMAIL@example.com` in `index.html` with your professional email.
 
-Your site will then be available at:
-`https://Aaryan1265.github.io/`
+## Local test
+
+From this folder:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## GitHub Pages
+
+Push the files to the root of your `Aaryan.github.io` repository (or your chosen Pages repository), then use GitHub Pages with the `main` branch and `/ (root)`.
+
+## Notes
+
+The portfolio intentionally uses no JavaScript framework. All interactions are local and work as a static GitHub Pages site.
