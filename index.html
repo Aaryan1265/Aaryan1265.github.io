@@ -1,351 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Aaryan Shukla Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Aaryan Shukla | Software Developer</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-<div class="container nav-content">
-<a href="#home" class="logo">AS.</a>
+    <div class="cursor-glow"></div>
 
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="assets/Aaryan_Shukla_Resume.pdf" class="btn">Resume</a></li>
-</ul>
-</div>
-</nav>
+    <!-- NAVBAR -->
 
-<section class="hero" id="home">
-<div class="container">
+    <nav class="navbar">
+        <div class="container nav-content">
 
-<span class="hero-subtitle reveal">
-Computer Programming & Analysis · Seneca Polytechnic
-</span>
+            <a href="#home" class="logo">AS.</a>
 
-<h1 class="hero-name reveal" id="name" data-text="Aaryan Shukla.">
-Aaryan Shukla.
-</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="assets/Aaryan_Shukla_Resume.pdf"
+                       class="resume"
+                       target="_blank">
+                        Resume
+                    </a>
+                </li>
+            </ul>
 
-<h2 class="hero-role reveal">
-<span id="role">Software Developer</span><span>|</span>
-</h2>
-
-<p class="hero-description reveal">
-I build practical software across full-stack development,
-backend systems, AI, security, data engineering, and ETL.
-</p>
-
-<a href="#projects" class="btn btn-primary reveal">
-Check out my work
-</a>
-
-<div class="socials reveal">
-<a href="https://github.com/Aaryan1265">GitHub ↗</a>
-<a href="https://www.linkedin.com/in/aaryan-shukla-440942300/">LinkedIn ↗</a>
-<a href="mailto:aaryan08052005@gmail.com">Email ↗</a>
-</div>
-
-</div>
-</section>
-
-<section class="tech-stack">
-<div class="marquee">
-
-<span>Python</span><b>◆</b>
-<span>C++</span><b>◆</b>
-<span>JavaScript</span><b>◆</b>
-<span>TypeScript</span><b>◆</b>
-<span>SQL</span><b>◆</b>
-<span>React</span><b>◆</b>
-<span>Next.js</span><b>◆</b>
-<span>FastAPI</span><b>◆</b>
-<span>PostgreSQL</span><b>◆</b>
-<span>Docker</span><b>◆</b>
-<span>Pandas</span><b>◆</b>
-<span>ETL</span><b>◆</b>
-<span>LLMs</span><b>◆</b>
-
-</div>
-</section>
+        </div>
+    </nav>
 
 
-<section class="section" id="about">
-<div class="container">
+    <!-- HERO -->
 
-<h2 class="reveal"><span>01.</span> About Me</h2>
+    <section class="hero" id="home">
 
-<div class="bento-grid">
+        <div class="container hero-content">
 
-<div class="bento-card large reveal">
-<h3>Who I am</h3>
-<p>
-I'm a Computer Programming & Analysis student at Seneca Polytechnic
-with a strong interest in software development and practical applications.
-</p>
-<p>
-My work spans full-stack development, backend systems, security,
-AI, data engineering, ETL, testing, and data quality.
-</p>
-<p>
-I enjoy turning complex technical problems into clean,
-reliable, maintainable software.
-</p>
-</div>
+            <span class="intro reveal">
+                Hi, my name is
+            </span>
 
-<div class="bento-card reveal">
-<h3 class="big">2024–27</h3>
-<p>Computer Programming & Analysis</p>
-<p>Seneca Polytechnic</p>
-</div>
+            <h1 id="name"
+                class="hero-name reveal"
+                data-text="Aaryan Shukla.">
+                Aaryan Shukla.
+            </h1>
 
-<div class="bento-card reveal">
-<h3>Tech Stack</h3>
-<div class="tags">
-<span>Python</span><span>C++</span><span>JavaScript</span>
-<span>TypeScript</span><span>SQL</span><span>React</span>
-<span>Next.js</span><span>FastAPI</span><span>PostgreSQL</span>
-<span>Docker</span><span>Pandas</span><span>Pytest</span>
-<span>ETL</span><span>LLMs</span><span>GitHub</span>
-</div>
-</div>
+            <h2 class="hero-role reveal">
+                <span id="role">Software Developer</span>
+                <b class="cursor">|</b>
+            </h2>
 
-<div class="bento-card reveal">
-<h3>Relevant Coursework</h3>
-<p>Object-Oriented Programming</p>
-<p>Data Structures & Algorithms</p>
-<p>Web Development</p>
-<p>Database Management</p>
-<p>Software Testing</p>
-<p>Systems Programming</p>
-</div>
+            <p class="hero-description reveal">
+                I build practical software across full-stack development,
+                backend systems, AI, security, data engineering, and ETL.
+            </p>
 
-</div>
-</div>
-</section>
+            <a href="#projects" class="btn btn-primary reveal">
+                Check out my work
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
 
+            <div class="socials reveal">
 
-<section class="section" id="experience">
-<div class="container">
+                <a href="https://github.com/Aaryan1265" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
 
-<h2 class="reveal"><span>02.</span> Experience</h2>
+                <a href="https://www.linkedin.com/in/aaryan-shukla-440942300/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
 
-<div class="bento-card large reveal">
+                <a href="mailto:aaryan08052005@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </a>
 
-<h3>Professional Experience</h3>
+            </div>
 
-<div class="experience">
+        </div>
 
-<div class="job">
-<div>
-<h4>Customer Service Representative — Farm Boy Inc.</h4>
-</div>
-<span>Jul 2026 – Present</span>
-</div>
-
-<p>
-Provide professional customer service while maintaining accuracy,
-professionalism, and attention to detail in a fast-paced environment.
-</p>
-
-<div class="job">
-<h4>Open House Ambassador — Seneca Polytechnic</h4>
-<span>May 2025 – Present</span>
-</div>
-
-<p>
-Represent Seneca during open house activities, welcome prospective
-students and guests, communicate program information, and support events.
-</p>
-
-<div class="job">
-<h4>Overnight Associate — Walmart Canada</h4>
-<span>Nov 2024 – Jul 2026</span>
-</div>
-
-<p>
-Maintained accuracy and organization while completing overnight
-retail and inventory responsibilities in a fast-paced environment.
-</p>
-
-<div class="job">
-<h4>Freelance Software Developer — Upwork</h4>
-<span>Jun 2024 – Sep 2025</span>
-</div>
-
-<p>
-Developed software solutions from client requirements, implementing,
-testing, debugging, and refining application features.
-</p>
-
-</div>
-</div>
-</div>
-</section>
+    </section>
 
 
-<section class="section" id="projects">
-<div class="container">
+    <!-- FLOATING SKILLS -->
 
-<h2 class="reveal"><span>03.</span> Some Things I've Built</h2>
+    <div class="tech">
+        <div class="marquee">
 
-<div class="projects">
+            <span>Python</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>SQL</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>Pandas</span>
+            <span>Pytest</span>
+            <span>ETL</span>
+            <span>LLMs</span>
+            <span>Git</span>
 
-<div class="project-card reveal">
-<div class="project-number">01</div>
-<div class="project-content">
-<div class="project-top">
-<h3>FinGuard</h3>
-<a href="https://github.com/Aaryan1265">GitHub ↗</a>
-</div>
-<h4>Transaction Risk Monitoring Platform</h4>
-<p>
-Full-stack transaction risk monitoring platform with REST APIs,
-risk workflows, database persistence, and containerized development.
-</p>
-<div class="tags">
-<span>Next.js</span><span>TypeScript</span><span>FastAPI</span>
-<span>PostgreSQL</span><span>Redis</span><span>Docker</span>
-</div>
-</div>
-</div>
+            <span>Python</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>SQL</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>Pandas</span>
+            <span>Pytest</span>
+            <span>ETL</span>
+            <span>LLMs</span>
+            <span>Git</span>
 
-
-<div class="project-card reveal">
-<div class="project-number">02</div>
-<div class="project-content">
-<div class="project-top">
-<h3>ControlBridge</h3>
-<a href="https://github.com/Aaryan1265/ControlBridge-Enterprise-Data-Reconciliation-Platform">GitHub ↗</a>
-</div>
-<h4>Enterprise Data Reconciliation & Risk Reporting</h4>
-<p>
-Data-controls platform for validation, reconciliation, ETL,
-exception detection, and automated reporting.
-</p>
-<div class="tags">
-<span>Python</span><span>Pandas</span><span>SQLAlchemy</span>
-<span>ETL</span><span>Pytest</span><span>Docker</span>
-</div>
-</div>
-</div>
+        </div>
+    </div>
 
 
-<div class="project-card reveal">
-<div class="project-number">03</div>
-<div class="project-content">
-<div class="project-top">
-<h3>ShadowTrace</h3>
-<a href="https://github.com/Aaryan1265">GitHub ↗</a>
-</div>
-<h4>Identity & Security Platform</h4>
-<p>
-Authentication-risk platform with explainable scoring for suspicious
-login behavior, REST APIs, alerts, and database-backed workflows.
-</p>
-<div class="tags">
-<span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
-<span>SQLAlchemy</span><span>Docker</span>
-</div>
-</div>
-</div>
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+                <span>01.</span>
+                About Me
+            </h2>
+
+            <div class="bento">
+
+                <div class="card large reveal">
+
+                    <h3>Who I am</h3>
+
+                    <p>
+                        I'm a Computer Programming & Analysis student at
+                        Seneca Polytechnic with a strong interest in software
+                        development and building practical applications.
+                    </p>
+
+                    <p>
+                        My work spans full-stack development, backend systems,
+                        security, artificial intelligence, data engineering,
+                        ETL, testing, and data quality.
+                    </p>
+
+                    <p>
+                        I enjoy breaking down complex technical problems,
+                        designing structured solutions, and building software
+                        that is reliable, maintainable, and useful.
+                    </p>
+
+                </div>
 
 
-<div class="project-card reveal">
-<div class="project-number">04</div>
-<div class="project-content">
-<div class="project-top">
-<h3>RepoDoctor</h3>
-<a href="https://github.com/Aaryan1265">GitHub ↗</a>
-</div>
-<h4>AI-Powered Repository Health Analyzer</h4>
-<p>
-Repository analysis tool combining health scoring, security,
-code-quality checks, AI summaries, testing, and CI.
-</p>
-<div class="tags">
-<span>Python</span><span>FastAPI</span><span>LLMs</span>
-<span>GitHub</span><span>Docker</span>
-</div>
-</div>
-</div>
+                <div class="card reveal">
+
+                    <h3 class="big">2024-27</h3>
+
+                    <p>Computer Programming & Analysis</p>
+
+                    <small>Seneca Polytechnic</small>
+
+                </div>
 
 
-<div class="project-card reveal">
-<div class="project-number">05</div>
-<div class="project-content">
-<div class="project-top">
-<h3>DataQuality</h3>
-<a href="https://github.com/Aaryan1265">GitHub ↗</a>
-</div>
-<h4>Enterprise Data Quality & Drift Analysis Toolkit</h4>
-<p>
-Toolkit focused on profiling, validation, drift analysis,
-and reporting for trustworthy analytical pipelines.
-</p>
-<div class="tags">
-<span>Python</span><span>Pandas</span><span>NumPy</span>
-<span>Data Analysis</span><span>Validation</span>
-</div>
-</div>
-</div>
+                <div class="card tech-card reveal">
 
-</div>
-</div>
-</section>
+                    <h3>Tech Stack</h3>
 
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>SQL</span>
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>Pandas</span>
+                        <span>Pytest</span>
+                        <span>ETL</span>
+                        <span>LLMs</span>
+                        <span>GitHub</span>
+                    </div>
 
-<section class="section" id="contact">
-<div class="container">
-
-<h2 class="reveal"><span>04.</span> Get In Touch</h2>
-
-<div class="contact-card reveal">
-
-<h3>Let's build something.</h3>
-
-<p>
-I'm currently seeking a
-<strong>Winter 2027 Software Development Co-op.</strong>
-</p>
-
-<div class="contact-links">
-<a href="mailto:aaryan08052005@gmail.com" class="btn btn-primary">
-Email Me
-</a>
-<a href="https://www.linkedin.com/in/aaryan-shukla-440942300/" class="btn">
-LinkedIn
-</a>
-<a href="https://github.com/Aaryan1265" class="btn">
-GitHub
-</a>
-</div>
-
-</div>
-</div>
-</section>
+                </div>
 
 
-<footer>
-<div class="container">
-Designed & built by Aaryan Shukla
-</div>
-</footer>
+                <div class="card coursework reveal">
 
-<script src="script.js"></script>
+                    <h3>Relevant Coursework</h3>
+
+                    <p>Object-Oriented Programming</p>
+                    <p>Data Structures & Algorithms</p>
+                    <p>Web Development</p>
+                    <p>Database Management</p>
+                    <p>Software Testing</p>
+                    <p>Systems Programming</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="section" id="experience">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+                <span>02.</span>
+                Experience
+            </h2>
+
+            <div class="experience-grid">
+
+                <div class="card professional reveal">
+
+                    <h3>Professional Experience</h3>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-heading">
+                            <h4>Customer Service Representative - Farm Boy Inc.</h4>
+                            <span>Jul 2026 - Present</span>
+                        </div>
+
+                        <p>Toronto, ON</p>
+
+                        <ul>
+                            <li>
+                                Provide professional customer service while
+                                maintaining accuracy in a fast-paced environment.
+                            </li>
+                            <li>
+                                Resolve customer questions efficiently while
+                                adapting to changing priorities.
+                            </li>
+                            <li>
+                                Collaborate with team members to support smooth
+                                daily operations and customer experience.
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-heading">
+                            <h4>Open House Ambassador - Seneca Polytechnic</h4>
+                            <span>May 2025 - Present</span>
+                        </div>
+
+                        <p>Toronto, ON</p>
+
+                        <ul>
+                            <li>
+                                Welcome prospective students and visitors during
+                                campus and open house events.
+                            </li>
+                            <li>
+                                Communicate program, campus, and student
+                                information clearly to visitors.
+                            </li>
+                            <li>
+                                Collaborate with staff and student ambassadors
+                                to support event operations.
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-heading">
+                            <h4>Overnight Associate - Walmart Canada</h4>
+                            <span>Nov 2024 - Jul 2026</span>
+                        </div>
+
+                        <p>Keswick, ON</p>
+
+                        <ul>
+                            <li>
+                                Maintained accuracy and organization across
+                                overnight inventory and operational tasks.
+                            </li>
+                            <li>
+                                Managed time-sensitive responsibilities while
+                                working independently and collaboratively.
+                            </li>
+                            <li>
+                                Maintained strong attention to detail in a
+                                high-volume environment.
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-heading">
+                            <h4>Freelance Software Developer - Upwork</h4>
+                            <span>Jun 2024 - Sep 2025</span>
+                        </div>
+
+                        <p>Toronto, ON</p>
+
+                        <ul>
+                            <li>
+                                Developed software solutions based on client
+                                requirements and project objectives.
+                            </li>
+                            <li>
+                                Implemented, tested, debugged, and refined
+                                application features through iterative development.
+                            </li>
+                            <li>
+                                Communicated with clients to understand
+                                requirements, incorporate feedback, and deliver
+                                working solutions.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card leadership reveal">
+
+                    <h3>Leadership & Activities</h3>
+
+
+                    <div class="leadership-item">
+
+                        <h4>Treasurer</h4>
+
+                        <span>Disruptive Technologies Club</span>
+
+                        <p>Seneca Polytechnic</p>
+
+                        <small>Sep 2024 - Present</small>
+
+                        <ul>
+                            <li>
+                                Support financial planning, budgeting, and
+                                administrative responsibilities.
+                            </li>
+                            <li>
+                                Help coordinate club activities, events, and
+                                technical initiatives.
+                            </li>
+                            <li>
+                                Work with student leaders to organize activities
+                                and maintain effective operations.
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="leadership-item">
+
+                        <h4>Peer Mentor</h4>
+
+                        <span>Seneca Polytechnic</span>
+
+                        <p>Toronto, ON</p>
+
+                        <small>Sep 2024 - Present</small>
+
+                        <ul>
+                            <li>
+                                Support students with academic and campus
+                                transition questions.
+                            </li>
+                            <li>
+                                Help students become familiar with campus
+                                resources and opportunities.
+                            </li>
+                            <li>
+                                Develop communication, leadership, and peer
+                                support skills through student interaction.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="section" id="projects">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+                <span>03.</span>
+                Some Things I've Built
+            </h2>
+
+
+            <div class="project-list">
+
+
+                <!-- REPO DOCTOR -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-content">
+
+                        <div class="project-image">
+                            <span>RD</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-label">
+                                Featured Project
+                            </span>
+
+                            <h3>RepoDoctor</h3>
+
+                            <p>AI-Powered Repository Health Analyzer</p>
+
+                            <div class="project-box">
+                                Repository analysis platform that evaluates
+                                code quality, security, documentation, testing,
+                                repository health, and development practices.
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>LLMs</span>
+                                <span>GitHub</span>
+                                <span>Docker</span>
+                            </div>
+
+                            <a href="https://github.com/Aaryan1265/RepoDoctor-AI-Powered-Repository-Health-Analyzer"
+                               target="_blank"
+                               aria-label="RepoDoctor GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DATA QUALITY -->
+
+                <article class="project-card reverse reveal">
+
+                    <div class="project-content">
+
+                        <div class="project-image">
+                            <span>DQ</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-label">
+                                Featured Project
+                            </span>
+
+                            <h3>DataQuality</h3>
+
+                            <p>Data Quality & Analytics Toolkit</p>
+
+                            <div class="project-box">
+                                Data quality and analytics toolkit for
+                                validating, profiling, analyzing, and
+                                understanding structured datasets.
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>SQL</span>
+                                <span>Analytics</span>
+                            </div>
+
+                            <a href="https://github.com/Aaryan1265/DataQuality-Analytics-Toolkit"
+                               target="_blank"
+                               aria-label="DataQuality GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SHADOWTRACE -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-content">
+
+                        <div class="project-image">
+                            <span>ST</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-label">
+                                Featured Project
+                            </span>
+
+                            <h3>ShadowTrace</h3>
+
+                            <p>Identity & Security Platform</p>
+
+                            <div class="project-box">
+                                Identity and security platform focused on
+                                authentication risk, security monitoring,
+                                alerts, APIs, and database-backed workflows.
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>SQLAlchemy</span>
+                                <span>Docker</span>
+                            </div>
+
+                            <a href="https://github.com/Aaryan1265/ShadowTrace-Identity-Security-Platform"
+                               target="_blank"
+                               aria-label="ShadowTrace GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FINGUARD -->
+
+                <article class="project-card reverse reveal">
+
+                    <div class="project-content">
+
+                        <div class="project-image">
+                            <span>FG</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-label">
+                                Featured Project
+                            </span>
+
+                            <h3>FinGuard</h3>
+
+                            <p>Transaction Risk Monitoring</p>
+
+                            <div class="project-box">
+                                Transaction risk monitoring platform with
+                                backend APIs, risk workflows, database
+                                persistence, and containerized development.
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                            </div>
+
+                            <a href="https://github.com/Aaryan1265/FinGuard-Transaction-Risk-Monitoring"
+                               target="_blank"
+                               aria-label="FinGuard GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CONTROLBRIDGE -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-content">
+
+                        <div class="project-image">
+                            <span>CB</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-label">
+                                Featured Project
+                            </span>
+
+                            <h3>ControlBridge</h3>
+
+                            <p>Enterprise Data Reconciliation Platform</p>
+
+                            <div class="project-box">
+                                Enterprise data controls platform for
+                                validation, reconciliation, ETL workflows,
+                                exception detection, and reporting.
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>SQLAlchemy</span>
+                                <span>ETL</span>
+                                <span>Pytest</span>
+                                <span>Docker</span>
+                            </div>
+
+                            <a href="https://github.com/Aaryan1265/ControlBridge-Enterprise-Data-Reconciliation-Platform"
+                               target="_blank"
+                               aria-label="ControlBridge GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+                <span>04.</span>
+                Get In Touch
+            </h2>
+
+            <div class="contact-form reveal">
+
+                <h3>Let's build something.</h3>
+
+                <p>
+                    I'm currently seeking a
+                    <strong>Winter 2027 Software Development Co-op.</strong>
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:aaryan08052005@gmail.com"
+                       class="btn btn-primary">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/aaryan-shukla-440942300/"
+                       target="_blank"
+                       class="btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/Aaryan1265"
+                       target="_blank"
+                       class="btn">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Designed & built by Aaryan Shukla
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
